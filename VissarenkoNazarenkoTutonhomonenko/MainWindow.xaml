@@ -1,0 +1,31 @@
+﻿<Window x:Class="VissarenkoNazarenkoTutonhomonenko.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VissarenkoNazarenkoTutonhomonenko"
+        mc:Ignorable="d"
+        Title="Tourenko App" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="280*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
+        <Image Source="Resources/Satanas.png" HorizontalAlignment="Left" Width="160"/>
+        <TextBox HorizontalAlignment="Left" Height="53" Margin="230,17,0,0" TextWrapping="Wrap" Text="DEMON TOUR" VerticalAlignment="Top" Width="270"  FontSize="40"/>
+        <Grid Background="Red" Panel.ZIndex="-2">
+            <Button Content="back to hell" HorizontalAlignment="Left" Margin="625,25,0,0" VerticalAlignment="Top" Width="115" Click="BtnBack_Click"  Height="35" Name="back">
+                
+            </Button>
+        </Grid>
+        <Grid Grid.Row="2" Background="Red"></Grid>
+        <Frame x:Name="Main_Frame_" NavigationUIVisibility="Hidden"  HorizontalAlignment="Left" ContentRendered="MainFrame_ContentRendered" Height="272" Margin="0,7,-3,0" Grid.Row="1" VerticalAlignment="Top" Width="795" RenderTransformOrigin="0.5,0.5">
+            
+            
+        </Frame>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
+
+    
